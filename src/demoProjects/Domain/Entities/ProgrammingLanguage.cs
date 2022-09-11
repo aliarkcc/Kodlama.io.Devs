@@ -5,6 +5,7 @@ namespace Domain.Entities
     public class ProgrammingLanguage:Entity
     {
         public string ProgrammingLanguageName { get; set; }
+        public virtual ICollection<ProgrammingLanguageTechnology> ProgrammingLanguageTechnologies { get; set; }
 
         public ProgrammingLanguage()
         {

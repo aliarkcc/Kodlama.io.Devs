@@ -35,7 +35,7 @@ namespace WebAPI.Controllers
             return Ok(getByIdProgrammingLanguageDto);
         }
         [HttpPut]
-        public async Task<IActionResult> Update([FromBody] UpdatedProgrammingLanguageModel updatedProgrammingLanguageCommand)
+        public async Task<IActionResult> Update([FromBody] UpdateProgrammingLanguageTechnologyDto updatedProgrammingLanguageCommand)
         {
             UpdatedProgrammingLanguageCommand setModel = new() { UpdatedProgrammingLanguageModel = updatedProgrammingLanguageCommand };
             UpdatedProgrammingLanguageDto result = await Mediator.Send(setModel);

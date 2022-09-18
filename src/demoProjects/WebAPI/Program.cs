@@ -1,4 +1,7 @@
 using Application;
+using Core.Security.JWT;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Configuration;
 using Persistence;
 
 var builder = WebApplication.CreateBuilder(args);

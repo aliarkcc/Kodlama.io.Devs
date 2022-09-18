@@ -3,8 +3,8 @@
     public class CreateGithubProfileDto
     {
         public int Id { get; set; }
-        public string UserName { get; set; }
-        public string ProfileUserName { get; set; }
+        public string UserFirstName { get; set; }
+        public string ProfileAddress{ get; set; }
 
     }
 }

@@ -81,7 +81,7 @@ namespace Persistence.Context
                 {
                     x.ToTable("GithubProfiles").HasKey(k => k.Id);
                     x.Property(p => p.Id).HasColumnName("Id");
-                    x.Property(p => p.ProfileUserName).HasColumnName("ProfileUserName");
+                    x.Property(p => p.ProfileAddress).HasColumnName("ProfileAddress");
                     x.HasOne(p => p.User);
                 });
 

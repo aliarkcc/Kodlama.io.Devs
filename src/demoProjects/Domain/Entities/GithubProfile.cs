@@ -5,7 +5,7 @@ namespace Domain.Entities
 {
     public class GithubProfile : Entity
     {
-        public string ProfileUserName { get; set; }
+        public string ProfileAddress { get; set; }
         public int UserId { get; set; }
         public virtual User? User { get; set; }
 
@@ -13,10 +13,10 @@ namespace Domain.Entities
         {
 
         }
-        public GithubProfile(int id, int userId, string profileUserName):this()
+        public GithubProfile(int id, int userId, string profileAddress) :this()
         {
             Id = id;
-            ProfileUserName = profileUserName;
+            ProfileAddress = profileAddress;
             UserId = userId;
         }
     }
